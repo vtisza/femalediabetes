@@ -1,0 +1,45 @@
+<html>
+    <link rel="stylesheet" href="../css/styles.css">
+<body>
+    <h1>Female diabetes risk analyzer</h1>
+
+    <fieldset>
+        <legend>Patient details</legend>
+    
+        <label for="pregnancies">Number of Pregnancies:</label>
+        <input type="number" id="pregnancies" name="pregnancies"
+               placeholder=0 step="1" />
+        <span class="validity"></span>
+    
+        <label for="bloodpressure">Blood pressure (diastolic):</label>
+        <input type="number" id="bloodpressure" name="bloodpressure"
+               placeholder=70 step="1" />
+        <span class="validity"></span>
+
+        <label for="bmi">BMI (body mass index):</label>
+        <input type="double" id="bmi" name="bmi"
+               placeholder=20 step="1" />
+        <span class="validity"></span>
+    
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"
+               placeholder=40 step="1" />
+        <span class="validity"></span>
+
+    
+    </fieldset>
+
+    <button id="predict_button">Analyze</button>
+
+    <p id="results"></p>
+
+    <button class="collapsible">About the app</button>
+    <div class="content">
+      <p>Using the <i>PIMA Indian Diabetes DataSet</i> from Kaggle I created a cutting edge machine learning algorithm that takes into account some simple variables to check if there is a significant risk for diabetes. <br><br> Measured the model on an independent sample the model was able to identify 70% of the total diabetic cases and was accurate in that prediction in more than 55% of the cases.<br><br>
+      <b>Warnings: the app cannot replace any medical visit or control and you shall not conider it as a professional medical advice. It only may give you and indication for a check-up if you did not plan to do so previously.</b><br><br> The underlaying model was trained using a sample mainly from PIMA Indians. Thereby maybe the model works more accurately in the case of that specific group.</b></p>
+    </div>
+
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
